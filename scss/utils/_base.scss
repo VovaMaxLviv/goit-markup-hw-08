@@ -1,0 +1,45 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    background-color: $white;
+    color: $main-color;
+    text-decoration: none;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+button{
+    cursor: pointer;
+    font-family: inherit;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+}
+li,a{
+    text-decoration: none;
+}
+.title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $main-color;
+    margin-bottom: 50px;
+}
+.section {
+    padding: 94px 0px;
+}

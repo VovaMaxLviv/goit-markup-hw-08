@@ -1,0 +1,41 @@
+.team {
+    background-color: $benefitsBG;
+    padding: 94px 0px;
+    .team-list {
+        justify-content: space-between;
+        display: flex;
+    }
+    .employee {
+            width: 270px;
+            background: $white;
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+            border-radius: 0px 0px 4px 4px;
+            font-size: 16px;
+            line-height: 19px;
+            display: block;
+        &-box {
+            padding: 30px;
+    
+            &__direction {
+                font-size: 16px;
+                line-height: 19px;
+                text-align: center;
+                letter-spacing: 0.03em;
+                color: $gray;
+            }
+    
+            &__name {
+                color: $main-color;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;
+                text-align: center;
+                letter-spacing: 0.03em;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+
+
