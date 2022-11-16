@@ -8,6 +8,9 @@ body {
     background-color: $white;
     color: $main-color;
     text-decoration: none;
+    @media screen and (min-width: 480px) {
+        overflow-x: hidden;
+    }
 }
 
 * {
@@ -43,3 +46,4 @@ li,a{
 .section {
     padding: 94px 0px;
 }
+

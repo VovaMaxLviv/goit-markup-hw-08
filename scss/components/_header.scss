@@ -4,7 +4,7 @@
             display: flex;
             justify-content: space-between;
             gap: 50px;
-    
+
         }
     
 
@@ -12,8 +12,18 @@
             text-decoration: none;
         }
         &__menu {
-            display: flex;
+            
             align-items: center;
+
+            @media (min-width: 480px) {
+                display: flex;
+                
+            }
+        }
+        &__close{
+            @media (min-width:768px) {
+                display: none;
+            }
         }
         &__contact {
             display: flex;
@@ -39,6 +49,8 @@
                 }
         }
 }
+
+
 
 .header .container {
     display: flex;
