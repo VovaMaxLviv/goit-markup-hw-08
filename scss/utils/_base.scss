@@ -10,8 +10,9 @@ body {
     text-decoration: none;
     @media screen and (min-width: 480px) {
         overflow-x: hidden;
-        width: auto;
+        width: 100%;
     }
+ 
 }
 
 * {
