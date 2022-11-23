@@ -1,5 +1,4 @@
 .join {
-    margin-left: 70px;
     color: $white;
     font-style: normal;
     display: inline-flex;
@@ -7,5 +6,16 @@
     text-transform: uppercase;
     width: 206px;
     height: 80px;
- 
+}
+
+@media (min-width: 768px) {
+    .join {
+            margin-left: 70px;
+        }
+}
+
+@media (min-width: 1200px) {
+    .join{
+        margin-left: 70px;
+    }
 }
