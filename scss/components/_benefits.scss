@@ -1,5 +1,5 @@
 .benefits{
-    padding: 94px 15px;
+    padding: 60px 15px;
     background-color: var(--white);
     
 
@@ -44,6 +44,8 @@
         
         &__list {
             display: flex;
+            flex-wrap: wrap;
+            flex-basis: calc((100% - 30px) / 2);
         }
         &__box {}
         &__title {
@@ -54,7 +56,10 @@
             letter-spacing: 0.03em;
         }
         &__item {
-            width: 100%;
+            // width: 100%;
+            flex-wrap: wrap;
+            flex-basis: calc((100% - 30px) / 2);
+            padding: 15px;
         }
     }
 }
@@ -76,6 +81,8 @@
             &__description {}
             &__item {
                 width: 270px;
+                flex-wrap: nowrap;
+                flex-basis: auto;
             }
         }
 }
