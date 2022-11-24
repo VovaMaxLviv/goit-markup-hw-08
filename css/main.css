@@ -1059,7 +1059,7 @@ li, a {
   visibility: hidden;
 }
 
-.menu-open__btn {
+.menu-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1079,7 +1079,7 @@ li, a {
   margin-left: auto;
 }
 @media screen and (min-width: 768px) {
-  .menu-open__btn {
+  .menu-button {
     display: none;
   }
 }
@@ -1095,7 +1095,7 @@ li, a {
   fill: #212121;
 }
 .menu-close__btn:hover, .menu-close__btn:focus {
-  fill: var(--accent-color);
+  fill: #2196F3;
 }
 
 .mob-menu__navigation {
@@ -1107,10 +1107,10 @@ li, a {
   font-size: 40px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--primary-text-color);
+  color: #212121;
 }
 .mob-menu__link:hover, .mob-menu__link:focus {
-  color: var(--accent-color);
+  color: #2196F3;
 }
 
 .mob-menu__item:not(:last-child) {
@@ -1130,7 +1130,7 @@ li, a {
   font-size: 34px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--accent-color);
+  color: #2196F3;
 }
 
 .mob-connect__link {
@@ -1138,11 +1138,11 @@ li, a {
   font-size: 24px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--contact-color);
+  color: #757575;
 }
 
 .mob-menu__link--active {
-  color: var(--accent-color);
+  color: #2196F3;
 }
 
 .mob-soc__list {
@@ -1167,7 +1167,7 @@ li, a {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.2;
-  color: var(--accent-color);
+  color: #2196F3;
 }
 
 .project-list {
