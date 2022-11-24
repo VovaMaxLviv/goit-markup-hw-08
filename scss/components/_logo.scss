@@ -3,9 +3,9 @@
     letter-spacing: 0.03em;
     font-size: 26px;
     line-height: 31px;
-    display: block;
+    
     color: $blu;
-    margin-right: 93px;
+    
     text-decoration: none;
     &__footer {
             color: $white;
@@ -13,4 +13,31 @@
     &__header {
             color: $black;
         }
+}
+@media screen and (min-width: 480px){
+    .footer .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .logo {
+        margin-right: 93px;
+    }
+    .footer .logo{
+        display: block;
+    }
+}
+
+@media (min-width: 1200px) {
+    .logo {
+        margin-right: 93px;
+    }
+    .footer .logo{
+        display: block;
+    }
 }

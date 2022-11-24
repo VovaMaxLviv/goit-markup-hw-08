@@ -68,6 +68,28 @@ li, a {
   }
 }
 
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 480px) and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 480px) and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -331,7 +353,7 @@ li, a {
 }
 
 .benefits {
-  padding: 60px 15px;
+  padding: 60px 0;
   background-color: var(--white);
 }
 .benefits__box {
@@ -632,6 +654,7 @@ li, a {
 }
 
 .footer {
+  height: 603px;
   background-color: #2F303A;
   text-align: center;
 }
@@ -692,8 +715,24 @@ li, a {
 
 @media (min-width: 768px) {
   .footer {
+    height: 463px;
     text-align: left;
-    display: list-item;
+  }
+  .footer .container {
+    padding: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
   }
   .footer-contacts {
     padding-bottom: 0;
@@ -706,6 +745,7 @@ li, a {
 }
 @media (min-width: 1200px) {
   .footer {
+    height: 252px;
     text-align: left;
     display: list-item;
   }
@@ -973,9 +1013,7 @@ li, a {
   letter-spacing: 0.03em;
   font-size: 26px;
   line-height: 31px;
-  display: block;
   color: #2196f3;
-  margin-right: 93px;
   text-decoration: none;
 }
 .logo__footer {
@@ -985,6 +1023,37 @@ li, a {
   color: #000000;
 }
 
+@media screen and (min-width: 480px) {
+  .footer .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .logo {
+    margin-right: 93px;
+  }
+  .footer .logo {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
+  }
+  .footer .logo {
+    display: block;
+  }
+}
 .project-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1122,7 +1191,7 @@ li, a {
 }
 
 .subscription {
-  width: 570px;
+  width: 100%;
   height: 86px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1137,7 +1206,6 @@ li, a {
           align-items: center;
 }
 .subscription__footer-form {
-  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1168,6 +1236,7 @@ li, a {
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  margin: 20px 0;
 }
 .subscription__button {
   width: 200px;
@@ -1213,7 +1282,6 @@ li, a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-left: 93px;
   }
   .subscription__footer-form {
     margin-top: 20px;
@@ -1222,7 +1290,7 @@ li, a {
     display: flex;
   }
   .subscription__input {
-    width: 358px;
+    width: 450px;
     height: 50px;
     font-size: 16px;
     line-height: 20px;
@@ -1240,6 +1308,7 @@ li, a {
     -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+    margin-bottom: 20px;
   }
   .subscription__button {
     width: 200px;
@@ -1282,6 +1351,9 @@ li, a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     margin-left: 93px;
   }
   .subscription__footer-form {

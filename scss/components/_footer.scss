@@ -1,4 +1,5 @@
 .footer{
+        height: 603px;
     background-color: $footerBG;
     text-align: center;
     &__title {
@@ -57,13 +58,21 @@
 
 @media (min-width: 768px) {
         .footer {
+                height: 463px;
                 text-align: left;
-                display: list-item;
+                
         
                         &__title {}
                 }
         
-                .footer .container {}
+                .footer .container {
+                        padding: 30px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        flex-wrap: wrap;
+                        flex-basis: calc((100% - 30px) / 2);
+                }
         
                 .footer-contacts {
                         padding-bottom: 0;
@@ -84,6 +93,7 @@
 
 @media (min-width: 1200px) {
         .footer {
+                height: 252px;
                 text-align: left;
                 display: list-item;
         
