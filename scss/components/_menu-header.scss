@@ -1,3 +1,21 @@
+.menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+    margin-left: auto;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
 .mob-menu {
     position: fixed;
     z-index: 1;
@@ -17,23 +35,7 @@
     visibility: hidden;
 }
 
-.menu-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    margin: 0;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    padding: 0;
-    margin-left: auto;
 
-    @media screen and (min-width: 768px) {
-        display: none;
-    }
-}
 
 .menu-close__btn {
     position: absolute;
