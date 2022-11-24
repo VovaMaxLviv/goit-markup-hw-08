@@ -8,13 +8,13 @@
     height: 80px;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .join {
-            margin-left: 70px;
-        }
+        margin-left: 70px;
+    }
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
     .join{
         margin-left: 70px;
     }

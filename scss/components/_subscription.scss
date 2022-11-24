@@ -61,7 +61,7 @@
 }
 
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .subscription {
         width: 570px;
         height: 86px;
@@ -117,7 +117,7 @@
 }
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
     .subscription {
         width: 570px;
         height: 86px;
