@@ -15,18 +15,25 @@
         }
 }
 @media screen and (min-width: 480px){
+    .logo{
+        margin-bottom: 16px;
+        margin-top: 16px;
+    }
     .footer .logo {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-right: 0;
-        margin-bottom: 20px;
+        // margin-bottom: 20px;
     }
 }
 
 @media screen and (min-width: 768px) {
     .logo {
-        margin-right: 93px;
+        // margin-right: 93px;
+        margin-bottom: 24px;
+        margin-top: 24px;
+        margin-right: 88px;
     }
     .footer .logo{
         display: block;
@@ -36,6 +43,9 @@
 @media screen and (min-width: 1200px) {
     .logo {
         margin-right: 93px;
+        margin-top: 0;
+        margin-bottom: 0;
+        
     }
     .footer .logo{
         display: block;

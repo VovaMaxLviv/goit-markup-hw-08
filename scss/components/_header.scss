@@ -1,5 +1,8 @@
 .header {
     border-bottom: 1px solid $headerBorderBT;
+    padding-bottom: 0;
+    padding-top: 0;
+    background-color: $white;
 
     &__list {
             display: none;
@@ -24,6 +27,7 @@
             display: flex;
             align-items: center;
             
+          
             
         }
         &__contact {
@@ -45,6 +49,9 @@
                     &:hover {
                         color: $blu;
                     }
+                    @media screen and(min-width:768px){
+                        padding: 5px 0;
+                    }
                 }
 
             @media screen and (min-width: 768px) {
@@ -52,9 +59,8 @@
                 flex-direction: column;
                 align-items: flex-start;
                 justify-content: space-between;
-                align-items: center;
                 gap: 0;
-                padding: 0 0 10px 0;
+                padding: 0;
             }
                 
             @media screen and (min-width: 1200px) {
@@ -72,16 +78,32 @@
 
 
 .header .container {
-    display: flex;
-    justify-content: space-between;
+    
     align-items: center;
+    
 }
 @media screen and (min-width: 480px) {
+    .header__menu {
+        justify-content: space-between;        
+    }
+    .header .container{
+        
+        margin: 0 15px;
+        padding: 0;
+    }
+}
+@media screen  and (min-width:768px){
     .header .container{
         display: flex;
         justify-content: space-between;
-        margin: 0 15px;
-        padding: 0;
+    }
+}
+@media screen and (min-width: 1200px){
+    .header .container{
+        display: flex;
+        justify-content: space-around;
+        max-width: 100%;
+       
     }
 }
 
@@ -126,6 +148,4 @@
             bottom: -1px;
         }
 }
-.header .logo{
-    margin: 24px 93px 24px 0;
-}
+

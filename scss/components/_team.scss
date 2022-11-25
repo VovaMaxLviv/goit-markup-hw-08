@@ -16,6 +16,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-bottom: 15px;
 
         &-box {
             padding: 30px;
@@ -53,6 +54,7 @@
         .employee {
             display: flex;
             margin: 15px;
+            margin-bottom: 0;
             
             &-box {
                 padding: 30px;
@@ -91,6 +93,20 @@
     }
 }
 
-
+@media screen and (min-width: 480px) {
+    .team__img{
+    width: 450px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .team__img{
+    width: 354px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .team__img{
+    width: 270px;
+    }
+}
 
 
