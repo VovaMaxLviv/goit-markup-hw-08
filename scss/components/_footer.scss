@@ -1,7 +1,7 @@
 .footer{
-        height: 603px;
         background-color: $footerBG;
         text-align: center;
+        padding: 60px 0px;
     &__nav{
 
     }
@@ -55,7 +55,7 @@
 }
 
 .footer .container {
-            padding: 60px 0px;
+        
         //     align-items: baseline;
         display: flex;
         flex-direction: column;
@@ -64,7 +64,7 @@
 }
 @media screen and (min-width: 768px) {
         .footer {
-                height: 463px;
+                
                 text-align: center;
                 
         
@@ -103,7 +103,7 @@
 
 @media screen and (min-width: 1200px) {
         .footer {
-                height: 252px;
+                
                 text-align: left;
                 display: list-item;
         
