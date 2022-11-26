@@ -2,8 +2,10 @@
     background-color: $benefitsBG;
     padding: 60px 15px;
     .team-list{
-        justify-content: center;
-        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 30px;
     }
     .employee{
         background: $white;
@@ -16,11 +18,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-bottom: 15px;
 
-        &-box {
-            padding: 30px;
-        
+        &-box {        
         &__direction {
             font-size: 16px;
             line-height: 19px;
@@ -36,6 +35,9 @@
             text-align: center;
             letter-spacing: 0.03em;
             margin-bottom: 10px;
+            @media screen and (max-width:768px){
+                margin-top: 30px;
+            }
         }
         }
     }
@@ -46,14 +48,13 @@
            
     
         .team-list {
-            width: 768px;
-            flex-wrap: wrap;
-            flex-basis: calc((100% - 30px) / 2);
-            display: flex;
+            // width: 768px;
+            // flex-wrap: wrap;
+            // flex-basis: calc((100% - 30px) / 2);
+            // display: flex;
         }
         .employee {
             display: flex;
-            margin: 15px;
             margin-bottom: 0;
             
             &-box {
@@ -71,11 +72,12 @@
             padding: 94px 0px;
     
     .team-list {
-                justify-content: space-between;
-                display: flex;
-                flex-direction: row;
-                width: 100%;
-                flex-wrap: nowrap;
+                // justify-content: space-between;
+                // display: flex;
+                // flex-direction: row;
+                // width: 100%;
+                // flex-wrap: nowrap;
+
             }
     
     .employee {
@@ -85,7 +87,6 @@
     
     
         &-box {
-            padding: 30px;
         &__direction {}
         &__name {}
         }

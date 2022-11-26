@@ -147,9 +147,16 @@
                 <h2 class="title">Наша команда</h2>
                 <ul class="team-list">
                     <li class="employee">
-                        <img  class="team__img"
-                        srcset="./images/4.jpg 1x, ./images/4@2x.jpg 2x" 
-                        src="./images/4.jpg" alt="Igor">
+                        <picture>
+                            <source srcset="./images/4desktop.jpg 1x, ./images/4desktop@2x.jpg 2x"
+                            media="(min-width:1200px">
+                            <source srcset="./images/4tablet.jpg 1x, ./images/4tablet@2x.jpg 2x"
+                            media="(min-width:768px">
+                            <source srcset="./images/4mobile.jpg 1x, ./images/4mobile@2x.jpg 2x"
+                            media="(max-width:767px">
+                            <img class="team__img" src="./images/4desktop.jpg"
+                                alt="Igor">
+                        </picture>
                         <div class="employee-box">
                             <h3 class="employee-box__name">Ігор Дем'яненко</h3>
                             <p class="employee-box__direction" lang="en">Product Designer</p>
@@ -166,9 +173,14 @@
                         </div>
                     </li>
                     <li class="employee">
-                        <img  class="team__img"
-                        srcset="./images/5.jpg 1x, ./images/5@2x.jpg 2x" 
-                        src="./images/5.jpg" alt="Olga">
+                        <picture>
+                            <source srcset="./images/5desktop.jpg 1x, ./images/5desktop@2x.jpg 2x" media="(min-width:1200px">
+                            <source srcset="./images/5tablet.jpg 1x, ./images/5tablet@2x.jpg 2x" 
+                            media="(min-width:768px">
+                            <source srcset="./images/5mobile.jpg 1x, ./images/5mobile@2x.jpg 2x" 
+                            media="(max-width:767px">
+                            <img class="team__img" src="./images/5desktop.jpg" alt="Olga">
+                        </picture>
                         <div class="employee-box">
                             <h3 class="employee-box__name">Ольга Рєпіна</h3>
                             <p class="employee-box__direction" lang="en">Frontend Developer</p>
@@ -185,9 +197,14 @@
                         </div>                       
                     </li>
                     <li class="employee">
-                        <img class="team__img"
-                        srcset="./images/6.jpg 1x, ./images/6@2x.jpg 2x"  
-                        src="./images/6.jpg" alt="Mikola">
+                        <picture>
+                            <source srcset="./images/6desktop.jpg 1x, ./images/6desktop@2x.jpg 2x" media="(min-width:1200px">
+                            <source srcset="./images/6tablet.jpg 1x, ./images/6tablet@2x.jpg 2x" 
+                            media="(min-width:768px">
+                            <source srcset="./images/6mobile.jpg 1x, ./images/6mobile@2x.jpg 2x" 
+                            media="(max-width:767px">
+                            <img class="team__img" src="./images/6desktop.jpg" alt="Mikola">
+                        </picture>
                         <div class="employee-box">
                             <h3 class="employee-box__name">Микола Тарасов</h3>
                             <p class="employee-box__direction" lang="en">Marketing</p>
@@ -204,9 +221,15 @@
                         </div>
                     </li>
                     <li class="employee">
-                        <img class="team__img"
-                        srcset="./images/7.jpg 1x, ./images/7@2x.jpg 2x" 
-                        src="./images/7.jpg" alt="Michailo">
+                        <picture>
+                            <source srcset="./images/7desktop.jpg 1x, ./images/7desktop@2x.jpg 2x"
+                            media="(min-width:1200px">
+                            <source srcset="./images/7tablet.jpg 1x, ./images/7tablet@2x.jpg 2x" 
+                            media="(min-width:768px">
+                            <source srcset="./images/7mobile.jpg 1x, ./images/7mobile@2x.jpg 2x" 
+                            media="(max-width:767px">
+                            <img class="team__img" src="./images/7desktop.jpg" alt="Michailo">
+                        </picture>
                         <div class="employee-box">
                             <h3 class="employee-box__name">Михайло Єрмаков</h3>
                             <p class="employee-box__direction" lang="en">UI Designer</p>

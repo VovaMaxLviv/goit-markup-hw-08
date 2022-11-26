@@ -4,18 +4,19 @@
     display: inline-flex;
     flex-direction: column;
     text-transform: uppercase;
+    
     width: 206px;
     height: 80px;
 }
 
 @media screen and (min-width: 768px) {
     .join {
-        margin-left: 70px;
+        // margin-left: 70px;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .join{
-        margin-left: 70px;
+        // margin-left: 70px;
     }
 }
