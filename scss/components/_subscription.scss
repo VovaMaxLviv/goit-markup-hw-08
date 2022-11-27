@@ -110,13 +110,14 @@
         // align-items: flex-start;
         // margin-left: 93px;
         &__footer-form {
-            margin-top: 20px;
+            // margin-top: 20px;
             display: flex;
             flex-direction: row;
         }
     
         &__input {
             width: 100%;
+            max-width: 357px;
             height: 50px;
             font-size: 16px;
             line-height: 20px;
@@ -132,9 +133,7 @@
             margin: 0;
         }
     
-        &__button {
-            margin-left: 12px;
-        }
+        &__button {}
     
         &__button-submit {
             margin-left: 10px;
