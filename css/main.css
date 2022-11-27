@@ -1303,6 +1303,11 @@ li, a {
   color: #2196F3;
 }
 
+@media screen and (max-width: 479px) {
+  .mob-tel__link {
+    font-size: 20px;
+  }
+}
 .project-list {
   gap: 30px;
   display: -webkit-box;
