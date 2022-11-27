@@ -15,9 +15,8 @@
         }
 }
 @media screen and (min-width: 480px){
-    .logo{
-        margin-bottom: 16px;
-        margin-top: 16px;
+    .header__logo{
+        padding: 16px 0;
     }
     .footer .logo {
         display: flex;
@@ -29,10 +28,9 @@
 }
 
 @media screen and (min-width: 768px) {
-    .logo {
+    .header__logo {
         // margin-right: 93px;
-        margin-bottom: 24px;
-        margin-top: 24px;
+        padding: 24px 0;
         margin-right: 88px;
     }
     .footer .logo{
@@ -41,10 +39,9 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .logo {
+    .header__logo {
         margin-right: 93px;
-        margin-top: 0;
-        margin-bottom: 0;
+        
         
     }
     .footer .logo{

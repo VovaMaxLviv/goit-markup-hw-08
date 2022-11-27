@@ -1,9 +1,6 @@
-.section .team {
-    background-color: $benefitsBG;
-}
 .team{
+    background-color: $benefitsBG;
     
-    max-width: 450px;
     
     .team-list{
         display: flex;
@@ -48,8 +45,7 @@
 }
 @media screen and (min-width: 768px) {
     .team {
-        max-width: 768px;
-    
+        
         .team-list {
             // width: 768px;
             // flex-wrap: wrap;
@@ -58,7 +54,7 @@
         }
         .employee {
             display: flex;
-            margin-bottom: 0;
+            // margin-bottom: 0;
             
             &-box {
                 padding: 30px;
@@ -72,8 +68,7 @@
 
 @media screen and (min-width: 1200px) {
     .team {
-            max-width: 1200px;
-    
+            
     .team-list {
                 // justify-content: space-between;
                 // display: flex;

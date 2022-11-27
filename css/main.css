@@ -65,15 +65,8 @@ li, a {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .section {
-    padding: 60px 0;
-  }
-}
-@media screen and (min-width: 768px) {
-  .section {
-    padding: 60px 0;
-  }
+.section {
+  padding: 60px 0;
 }
 @media screen and (min-width: 1200px) {
   .section {
@@ -87,18 +80,14 @@ li, a {
   margin-left: auto;
   margin-right: auto;
   margin: 0 auto;
+  max-width: 480px;
 }
-@media screen and (min-width: 480px) {
-  .container {
-    max-width: 480px;
-  }
-}
-@media screen and (min-width: 480px) and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
   }
 }
-@media screen and (min-width: 480px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
   }
@@ -526,8 +515,7 @@ li, a {
           justify-content: center;
   max-width: 480px;
   margin-top: 0;
-  margin: auto;
-  outline: 1px solid #212121;
+  margin: 0 auto;
   padding: 118px 0;
 }
 @media screen and (min-width: 768px) {
@@ -551,7 +539,7 @@ li, a {
 .bisnes__title {
   font-weight: 900;
   font-size: 26px;
-  line-height: 42px;
+  line-height: 162%;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -562,14 +550,14 @@ li, a {
 @media screen and (min-width: 768px) {
   .bisnes__title {
     font-size: 26px;
-    line-height: 42px;
+    line-height: 162%;
     max-width: 360px;
   }
 }
 @media screen and (min-width: 1200px) {
   .bisnes__title {
     font-size: 44px;
-    line-height: 60px;
+    line-height: 136%;
     max-width: 696px;
   }
 }
@@ -1042,7 +1030,6 @@ li, a {
 }
 
 .header .container {
-  padding: 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1135,9 +1122,8 @@ li, a {
 }
 
 @media screen and (min-width: 480px) {
-  .logo {
-    margin-bottom: 16px;
-    margin-top: 16px;
+  .header__logo {
+    padding: 16px 0;
   }
   .footer .logo {
     display: -webkit-box;
@@ -1153,9 +1139,8 @@ li, a {
   }
 }
 @media screen and (min-width: 768px) {
-  .logo {
-    margin-bottom: 24px;
-    margin-top: 24px;
+  .header__logo {
+    padding: 24px 0;
     margin-right: 88px;
   }
   .footer .logo {
@@ -1163,10 +1148,8 @@ li, a {
   }
 }
 @media screen and (min-width: 1200px) {
-  .logo {
+  .header__logo {
     margin-right: 93px;
-    margin-top: 0;
-    margin-bottom: 0;
   }
   .footer .logo {
     display: block;
@@ -1211,6 +1194,8 @@ li, a {
           flex-direction: column;
   background-color: #fff;
   padding: 48px 40px;
+  margin-bottom: 64px;
+  overflow: scroll;
 }
 
 .mob-menu.is-hidden {
@@ -1359,7 +1344,7 @@ li, a {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.project__link:hover .project__overlay, .project__link:focus .project__overlay {
+.project__link:hover .project__info, .project__link:focus .project__info {
   color: #fff;
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
@@ -1381,7 +1366,7 @@ li, a {
     width: 370px;
   }
 }
-.project__overlay {
+.project__info {
   position: absolute;
   top: 0;
   left: 0;
@@ -1394,12 +1379,13 @@ li, a {
   width: 100%;
   height: 100%;
   padding: 24px;
-  margin: 0;
+  overflow: scroll;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.03em;
+  text-align: left;
   color: #fff;
   background: rgba(33, 150, 243, 0.9);
   -webkit-transform: translateY(101%);
@@ -1629,12 +1615,8 @@ li, a {
     margin-left: 10px;
   }
 }
-.section .team {
-  background-color: #F5F4FA;
-}
-
 .team {
-  max-width: 450px;
+  background-color: #F5F4FA;
 }
 .team .team-list {
   display: -webkit-box;
@@ -1691,23 +1673,16 @@ li, a {
 }
 
 @media screen and (min-width: 768px) {
-  .team {
-    max-width: 768px;
-  }
   .team .employee {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 0;
   }
   .team .employee-box {
     padding: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .team {
-    max-width: 1200px;
-  }
   .team .employee {
     width: 270px;
     display: block;
@@ -1728,6 +1703,9 @@ li, a {
   .team__img {
     width: 270px;
   }
+}
+.work {
+  padding-top: 0;
 }
 @media screen and (max-width: 1200px) {
   .work {

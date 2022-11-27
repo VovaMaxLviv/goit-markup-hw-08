@@ -58,14 +58,9 @@ li,a{
 
 
 .section {
-    @media screen and (min-width: 480px){
-        padding: 60px 0;
-    }
-    @media screen and (min-width: 768px) {
-        padding: 60px 0;
-    }
+    padding: 60px 0;
     
-
+  
     @media screen  and (min-width: 1200px){
         padding: 94px 0;
     }
@@ -76,9 +71,7 @@ li,a{
     margin-left: auto;
     margin-right: auto;
     margin: 0 auto;
-    
-    @media screen and (min-width: 480px) {
-        max-width: 480px;
+    max-width: 480px;
     
     @media screen and (min-width: 768px) {
         max-width: 768px;
@@ -88,5 +81,5 @@ li,a{
         max-width: 1200px;
         
         }
-    }
+    
 }
