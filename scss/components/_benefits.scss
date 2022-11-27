@@ -46,9 +46,6 @@
 }
 @media screen and (min-width: 768px)  {
     .benefits {
-        
-        &__list {}
-        &__box {}
         &__title {
             text-align: left;
         }
@@ -67,20 +64,13 @@
 @media screen and (min-width: 1200px) {
     .benefits {
             display: block;    
-            &__list {
-                // display: flex;
-                // flex-direction: row;
-                // justify-content: space-between;
-            }
             &__title {  
                 text-align: left;
             }
-
-            &__description {}
             &__item {
                 width: 270px;
                 flex-wrap: nowrap;
                 flex-basis: auto;
             }
-        }
+    }
 }
