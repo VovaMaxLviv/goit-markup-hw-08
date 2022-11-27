@@ -1304,7 +1304,7 @@ li, a {
 }
 
 @media screen and (max-width: 479px) {
-  .mob-tel__link {
+  .mob-tel__link, .mob-menu__link, .mob-connect__link {
     font-size: 20px;
   }
 }
