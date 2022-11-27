@@ -16,12 +16,7 @@
     @media screen and (min-width: 1200px) {
         max-width: 370px;
     }
-    // &:nth-child(3n) {
-    //         margin-right: 0px;
-    //     }
-    // &:nth-last-child(-n+3) {
-    //         margin-bottom: 0px;
-    //     }
+   
     &__link {
             display: block;
             border: 1px solid $grayscale;
@@ -89,6 +84,7 @@
             color: $main-color;
             line-height: 2.25em;
             padding: 0;
+            text-align: left;
         }
         
         &__text {
@@ -96,6 +92,7 @@
             line-height: 30px;
             letter-spacing: 0.03em;
             color: $gray;
+            text-align: left;
                 }
 }
 
