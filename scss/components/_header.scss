@@ -49,9 +49,6 @@
                     &:hover {
                         color: $blu;
                     }
-                    @media screen and(min-width:768px){
-                        padding: 5px 0;
-                    }
                 }
 
             @media screen and (min-width: 768px) {
@@ -92,7 +89,6 @@
         display: flex;
         justify-content: space-around;
         max-width: 100%;
-       
     }
 }
 
