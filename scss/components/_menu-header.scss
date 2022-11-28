@@ -110,6 +110,7 @@
 .mob-soc__list {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .mob-soc__item:not(:first-child) {

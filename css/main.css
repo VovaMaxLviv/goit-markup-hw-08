@@ -1286,6 +1286,8 @@ li, a {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .mob-soc__item:not(:first-child) {
@@ -1447,6 +1449,7 @@ li, a {
   border-radius: 50%;
   fill: #AFB1B8;
   margin: 0px;
+  margin-right: 10px;
   padding: 0px;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1665,6 +1668,10 @@ li, a {
       -ms-flex-align: center;
           align-items: center;
 }
+.team .employee-box {
+  width: 100%;
+  padding: 30px;
+}
 .team .employee-box__direction {
   font-size: 16px;
   line-height: 19px;
@@ -1680,11 +1687,6 @@ li, a {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
-}
-@media screen and (max-width: 768px) {
-  .team .employee-box__name {
-    margin-top: 30px;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1719,6 +1721,12 @@ li, a {
     width: 270px;
   }
 }
+.team .socials {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .work {
   padding-top: 0;
 }
